@@ -1,22 +1,26 @@
 {
-  "version": 1,
-  "dfx": "0.11.2",
-  "canisters": {
-    "trace": {
-      "type": "motoko",
-      "main": "src/trace/main.mo"
+    "version": 1,
+    "dfx": "0.11.2",
+    "canisters": {
+        "trace": {
+        "type": "motoko",
+        "main": "src/trace/main.mo"
+        },
+        "trace2": {
+        "type": "motoko",
+        "main": "src/trace/main.mo"
+        }
+    },
+    "defaults": {
+        "build": {
+        "packtool": "",
+        "args": ""
+        }
+    },
+    "networks": {
+        "local": {
+        "bind": "127.0.0.1:8848",
+        "type": "ephemeral"
+        }
     }
-  },
-  "defaults": {
-    "build": {
-      "packtool": "",
-      "args": ""
-    }
-  },
-  "networks": {
-    "local": {
-      "bind": "127.0.0.1:8000",
-      "type": "ephemeral"
-    }
-  }
 }
